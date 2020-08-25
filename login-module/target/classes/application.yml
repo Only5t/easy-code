@@ -1,0 +1,19 @@
+server:
+  port: 8100
+  error:
+    path: /error
+spring:
+  application:
+    name: easy-code-login
+  datasource:
+    url: jdbc:mysql://192.168.252.130:3306/easycode?serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+##jwt配置
+audience:
+  clientId: 098f6bcd4621d373cade4e832627b4f6  # 代表这个JWT的接收对象,存入audience
+  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=  # 密钥, 经过Base64加密, 可自行替换
+  name: restapiuser   # JWT的签发主体，存入issuer
+  expiredSecond: 172800   # 过期时间，时间戳
+

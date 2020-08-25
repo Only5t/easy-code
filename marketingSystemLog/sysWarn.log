@@ -1,0 +1,1 @@
+2020-06-19 16:00:09,716 WARN (DriverDataSource.java:70)- Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
